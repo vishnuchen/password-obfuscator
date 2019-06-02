@@ -12,8 +12,8 @@ function obfuscator (arr) {
       arr[i] = 1;
     }
   }
-  arr = arr.join('')
-  return arr;
+  var Newarr = arr.join('')
+  return Newarr;
 }
 
-console.log(obfuscator(passwordInput));
+console.log("The scrambled password:", obfuscator(passwordInput));
